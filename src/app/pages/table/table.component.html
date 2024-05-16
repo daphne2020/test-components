@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="button-row">
+    <button mat-fab extended color="primary" (click)="openModal('new')">
+      <mat-icon>add_circle</mat-icon>
+      Nuevo Cliente
+    </button>
+  </div>
+<tots-form #form [fields]="fields" [item]="item" (onAction)="onActionForm($event)"></tots-form>
+  <tots-table-full-group #tableCompGroup [config]="config" (onAction)="onTableAction($event)" [pageIndex]="1"
+  [pageSize]="5"></tots-table-full-group>
+</div>

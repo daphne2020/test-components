@@ -1,0 +1,15 @@
+.container{
+  width: 1200px;
+  margin: auto;
+  padding: 4em;
+  background-color: white;
+}
+
+.button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
